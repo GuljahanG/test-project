@@ -56,10 +56,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $data = $user->gifts;
-        //return $user;
-        //return Gift::where('gift_id', $data[0]->id)->get();
-        return UserResource::make($user);
+       return UserResource::make($user);
     }
 
     /**
